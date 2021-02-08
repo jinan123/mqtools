@@ -1,0 +1,24 @@
+{
+    "name": "jinanav/mqtools",
+    "description": "This is a simple tool for using MQ",
+    "require": {
+        "php-amqplib/php-amqplib": "^2.12",
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-iconv": "*",
+        "ext-openssl": "*"
+    },
+    "authors": [
+        {
+            "name": "jinanv666",
+            "email": "1326944332@qq.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "mq\\":"./src/"
+        }
+    },
+    "minimum-stability": "dev"
+
+}
