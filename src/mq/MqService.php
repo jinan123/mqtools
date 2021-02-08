@@ -26,7 +26,7 @@ class MqService {
      * @return MqService
      */
     public static function connect(array $config = [],$name = false){
-        self::$config = config('mq.');
+        //self::$config = config('mq.');
         //创建mq操作实例
         self::$config = array_merge(self::$config,$config);
         $mqServiceName = "mq\\drive\\".self::$config['type']."Drive";
