@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e278682ce0307f37bbd50d8e755f2967",
+    "content-hash": "9ef003ec284bc0ab00d62d9aeab64c61",
     "packages": [
         {
             "name": "php-amqplib/php-amqplib",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-amqplib/php-amqplib.git",
-                "reference": "dafd10b90d1e95e79f4318a10244fd817b12a8d5"
+                "reference": "eb0376094c2ecc75bcaed68104e5f667a648e7f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/dafd10b90d1e95e79f4318a10244fd817b12a8d5",
-                "reference": "dafd10b90d1e95e79f4318a10244fd817b12a8d5",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/eb0376094c2ecc75bcaed68104e5f667a648e7f0",
+                "reference": "eb0376094c2ecc75bcaed68104e5f667a648e7f0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -87,7 +87,7 @@
                 "queue",
                 "rabbitmq"
             ],
-            "time": "2021-01-27T20:14:16+00:00"
+            "time": "2021-02-08T20:06:34+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -193,6 +193,11 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-iconv": "*",
+        "ext-openssl": "*"
+    },
     "platform-dev": []
 }

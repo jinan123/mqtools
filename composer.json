@@ -16,7 +16,7 @@
     ],
     "autoload":{
         "psr-4":{
-            "mq\\":"./src/"
+            "mq\\":"src/mq"
         }
     },
     "minimum-stability": "dev"

@@ -53,12 +53,12 @@ class RabbitMqDrive{
                 $this->options['password'],
                 $this->options['vhost']
             );
-            $this->channel = $this->handler->channel();
-            $this->createExchange();
             //注册消费者
             if(!empty($this->options['consumers'])){
                 $this->consumers = new $this->options['consumers'];
             }
+            $this->channel = $this->handler->channel();
+            $this->createExchange();
         }catch (Exception $e){
             if($this->options['debug']){
                 exit('exception: '.$e->getMessage());

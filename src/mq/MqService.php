@@ -17,7 +17,20 @@ class MqService {
     protected static $config = [];
     //消息队列组
     protected static $mqService;
-    //消息队列名称
+
+
+    /**
+     * 切换数据库连接
+     * @access public
+     * @param  array $config 连接配置
+     * @return array
+     */
+    public static function config(array $config = []){
+        if(!empty($config)){
+            self::$config = array_merge(self::$config,$config);
+        }
+        return self::$config;
+    }
 
     /**
      * 切换数据库连接
