@@ -1,6 +1,7 @@
 {
     "name": "jinanav/mqtools",
     "description": "This is a simple tool for using MQ",
+    "version": "v1.0",
     "require": {
         "php-amqplib/php-amqplib": "^2.12",
         "php": ">=7.0",
