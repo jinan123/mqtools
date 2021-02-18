@@ -124,7 +124,7 @@ class RabbitMqDrive{
      */
     public function dealMsg($msg){
         $info = json_decode($msg->body,true);
-        if(!empty($this->consumers)) exit("There are no consumers available");
+        if(empty($this->consumers)) exit("There are no consumers available");
         $this->consumers->deal($info);
         //开始处理
         if(!$this->autoAck) {
