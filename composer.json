@@ -15,6 +15,7 @@
             "email": "1326944332@qq.com"
         }
     ],
+    "license": "MIT",
     "autoload":{
         "psr-4":{
             "mq\\":"src/mq"
